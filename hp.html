@@ -7,28 +7,17 @@
     padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/berncodemo/hp.jpg');" >
-    <div><button style="width: 80px;color: white;height: 40px;background: red;display:none;" id="open-start">Get Help</button></div>
+    background-image: url('/berncodemo/hp-2.jpg');" >
+    <div id="fb-root"></div>
     <script>
-  (function(d) {
-    window['recime-bot'] = '{"id":"b1d6681bc9d39e0393931077f82eaf6a","meta":{"user":{"firstName":"Julia","lastName":"Jones"}}}';
-    var s = d.createElement('script');
-    s.setAttribute('id', 'recime-chatbot-script');
-    s.setAttribute('src', 'https://headchat.recime.io/shim.js');
-    s.setAttribute('async', 'async');
-    d.getElementsByTagName('body')[0].appendChild(s);
-  })(document);
-
-// click to open
-  (function(d) {
-      d.addEventListener('DOMContentLoaded', function() {
-        d.getElementById('open-start').addEventListener('click', function() {
-          headchat.open('button_open');
-        });
-      });
-    })(document);
-
-</script>
-
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-customerchat" attribution="setup_tool" page_id="23497828950" logged_in_greeting="Hi! Love learning new things? Chat with our bot to receive daily trivia." logged_out_greeting="Hi! Love learning new things? Chat with our bot to receive daily trivia." ref="449fd571d60b11e88a9353d795406789"></div>
 </body>
 </html>
