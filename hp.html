@@ -8,19 +8,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('/berncodemo/hp.jpg');" >
-    <div id="fb-root"></div>
-<script>
+<a href="#" id="open-start">Get Help</a>
+    
+    <script>
   (function(d) {
-    window['recime-bot'] = {"id":"0c04a4adf8d94ca85f14b6ca56437ff4","title":"Bernalillo County Assessor Bot","apiKey":"7169bb10ffdd11e8b05203c93369ee67","language":"en","primaryColor":"#3c6","secondaryColor":"#eff4fa","icon":"comments","greetingText":"How can we help you?","greetingDelay":5};
+    window['recime-bot'] = {"id":"0c04a4adf8d94ca85f14b6ca56437ff4","title":"Bernalillo County Assessor Bot","apiKey":"7169bb10ffdd11e8b05203c93369ee67","language":"en","primaryColor":"#008043","secondaryColor":"#eff4fa","icon":"comments","greetingText":"How can we help you?","greetingDelay":10};
     var s = d.createElement('script');
     s.setAttribute('id', 'recime-chatbot-script');
     s.setAttribute('src', 'https://webchat.smartloop.ai/shim.js');
     s.setAttribute('async', 'async');
     d.getElementsByTagName('body')[0].appendChild(s);
   })(document);
+
+// click to open
+  (function(d) {
+      d.addEventListener('DOMContentLoaded', function() {
+        d.getElementById('open-start').addEventListener('click', function() {
+          headchat.open('start');
+        });
+      });
+    })(document);
+
 </script>
-    
-    
-    <div class="fb-customerchat" attribution="setup_tool" page_id="23497828950" logged_in_greeting="Hi! Love learning new things? Chat with our bot to receive daily trivia." logged_out_greeting="Hi! Love learning new things? Chat with our bot to receive daily trivia." ref="449fd571d60b11e88a9353d795406789"></div>
+ 
 </body>
 </html>
