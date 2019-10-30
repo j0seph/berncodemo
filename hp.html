@@ -11,18 +11,18 @@
 <a href="#" id="open-start">Get Help</a>
 <script>
   (function(d) {
-    window['recime-bot'] = {"id":"f321f417a5294be02a41573d8eaed38d","title":"University of the People - WEB","apiKey":"199e6c60c39f11e9bd492b7415f505c7","language":"en","primaryColor":"#4b345d","secondaryColor":"#eff4fa","icon":"comments","avatar":"https://icons.recime.io/f321f417a5294be02a41573d8eaed38d.png","greetingText":"Hi! How can we help you?","greetingDelay":5,"playSound":true};
-    var s = d.createElement('script');
-    s.setAttribute('id', 'recime-chatbot-script');
-    s.addEventListener('load', function() {
-      setTimeout(function() {
-        webchat.setUser({ custom: { referrerUrl: "https://www.uopeople.edu" } });
-      }, 600);
-    });
-    s.setAttribute('src', 'https://webchat.smartloop.ai/shim.js');
-    s.setAttribute('async', 'async');
-    d.getElementsByTagName('body')[0].appendChild(s);
-  })(document); 
+  window['recime-bot'] = {"id":"f321f417a5294be02a41573d8eaed38d","title":"Michelle - UoPeople Chatbot","apiKey":"199e6c60c39f11e9bd492b7415f505c7","language":"en","primaryColor":"#4b345d","secondaryColor":"#eff4fa","icon":"comments","avatar":"https://icons.recime.io/f321f417a5294be02a41573d8eaed38d.png","greetingText":"Hi! How can we help you?","greetingDelay":5,"playSound":true};
+  var s = d.createElement('script');
+  s.setAttribute('id', 'recime-chatbot-script');
+  s.addEventListener('load', function() {
+    setTimeout(function() {
+      webchat.setUser({ custom: { referrerUrl: window.location.href } });
+    }, 600);
+  });
+  s.setAttribute('src', 'https://webchat.smartloop.ai/shim.js');
+  s.setAttribute('async', 'async');
+  d.getElementsByTagName('body')[0].appendChild(s);
+})(document); 
     </script>
     
 </body>
