@@ -15,14 +15,14 @@
   var s = d.createElement('script');
   s.setAttribute('id', 'recime-chatbot-script');
   s.addEventListener('load', function() {
-    setTimeout(function() {
+    webchat.init(function() {
       webchat.setUser({ custom: { referrerUrl: window.location.href } });
-    }, 600);
+    });
   });
   s.setAttribute('src', 'https://webchat.smartloop.ai/shim.js');
   s.setAttribute('async', 'async');
   d.getElementsByTagName('body')[0].appendChild(s);
-})(document); 
+})(document);
     </script>
     
 </body>
